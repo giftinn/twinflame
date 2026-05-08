@@ -15,58 +15,38 @@ interface PolaroidItem {
 
 const polaroids: PolaroidItem[] = [
   {
-    id: 1,
-    image: 'https://files.catbox.moe/2uezlu.jpg',
-    song: 'Senja Sudut Kota',
-    artist: 'Samuel Cipta',
-    audio: 'https://files.catbox.moe/hde6rr.mp3'
-  },
-  {
     id: 2,
-    image: 'https://files.catbox.moe/6ud3ln.jpg',
-    song: 'Thinking Out Loud',
-    artist: 'Ed Sheeran',
-    audio: 'https://files.catbox.moe/m1asq3.mp3'
+    image: 'https://giftinn.github.io/music-host/frenpict.jpg',
+    song: 'Count on Me',
+    artist: 'Bruno Mars',
+    audio: 'https://giftinn.github.io/music-host/Count%20on%20Me%20-%20Bruno%20Mars.mp3'
   },
-  {
-    id: 3,
-    image: 'https://files.catbox.moe/ly0lku.jpg',
-    song: 'Intro (End of the World',
-    artist: 'Ariana Grande',
-    audio: 'https://files.catbox.moe/b1waeh.mp3'
-  }
 ];
 
 const SecretLetterPage: React.FC<SecretLetterPageProps> = ({ onBackToStart }) => {
   const [displayedText, setDisplayedText] = useState('');
   const [showFinalMessage, setShowFinalMessage] = useState(false);
 
-  const fullText = `Happy Mensiversary for Us! 
+  const fullText = `Untuk kalian, 7 orang yang selama ini jadi rumah paling nyaman di sekolah.
   
-First, thank you for your time buat buka gift sederhana dari aku ini (and i hope u like it hehe). I just wanna say, happy mensive for my lovely, coolest man.
+Rasanya aneh banget mikirin kalau nanti kita bakal jalan masing-masing. Dulu kita ketemu cuma sebagai orang asing, tapi sekarang malah jadi bagian paling berharga dari cerita hidup satu sama lain. Banyak hal yang udah kita lewatin bareng, mulai dari ketawa sampai sakit perut, saling ejek, ngambek-ngambekan, nangis diam-diam, sampai momen kecil yang mungkin orang lain anggap biasa, tapi buat kita itu kenangan yang bakal susah dilupain.
 
-Jujur aku khawatir banget kamu udah berhari-hari hilang dan gada kabar sama sekali, aku harap dihari mensive kita kamu udah bisa ngabarin aku dan buka minigift dari aku ini. aku harap kamu juga gak akan hilang kabar lama lagi kaya gini:c dan semoga mensive kedua ini aku gak merayakan sendiri.
+Kadang aku masih ga nyangka, ternyata orang-orang yang awalnya cuma “temen kelas” bisa berubah jadi keluarga sendiri. Kalian selalu ada di masa-masa paling capek, paling ribet, bahkan di saat dunia rasanya ga berpihak. Terima kasih karena udah jadi alasan aku semangat datang ke sekolah, jadi tempat cerita paling aman, dan jadi orang-orang yang selalu berhasil bikin hari buruk terasa lebih ringan.
 
-Then, i wanna say thank you for everything u did to me, it means a lot to me fr. makasihh udah mau nge-treat aku sebaik ituu, makasih udah mau dengerin semua keluh kesah aku, cerita random aku. aku jugaa makasih banget selama ini kamu selalu sabar sama aku, jarang marah intinya u treated me like a princess. thank you, sayang. i'm sorry if i act like a kid sometimes, bikin kamu kesel, suka ngambek sometimes.. maafin aku yaa sayangg? aku beneran berharap kita bisa lastlong sayang.
+Jujur, aku takut sama kata “berpisah”. Takut kalau nanti semuanya berubah. Takut kita jadi sibuk sama hidup masing-masing sampai perlahan asing. Takut nanti cuma bisa lihat kabar lewat story atau repost kenangan lama. Padahal sekarang rasanya baru kemarin kita mulai deket, baru kemarin bikin inside joke yang cuma kita yang ngerti, baru kemarin ketawa bareng tanpa mikirin kalau suatu saat bakal ada pertemuan yang berubah jadi perpisahan.
 
-And bcs it's our special day, aku harap hubungan kita makin kuat, perasaan kamu ke aku masih tetap sama (kalau bisa sih makin sayang dan cinta hehehe), dan semua mimpi kita berdua terwujud satu persatu. aku juga berharap semoga kita selalu dikelilingi sama hal-hal baik dan dijauhin dari yang jahat-jahat. aku berharap setelah ini, kamu ga hilang tanpa kabar lagii.. thenn, i just wanna say that u aren't alone. kamu harus percaya kalau kamu selalu dikelilingi orang-orang yang sayang sama kamu, utamanya aku yang selalu disini buat tempat kamu pulang. bahagia terus yaa sayang, jangan sedih-sedihh, jangan capek-capek jugaa.. semoga setiap masalah yang kamu hadapi selalu diberi jalan keluar dan dipermudah. 
-.
-.
-.
-i want to unravel you slowly, like a buried ache, longing to be seen. something in you felt so familiar—like the echo of a home i’ve spent my whole life trying to find.
+Kalau nanti kita udah punya jalan hidup sendiri-sendiri, aku harap kalian tetap bahagia. Semoga mimpi kalian satu-satu tercapai, semoga kalian dipertemukan sama banyak hal baik, dan semoga dunia selalu lembut sama kalian. Tapi di antara semua hal yang berubah nanti, aku harap satu hal ini tetap sama: jangan lupain kita. Jangan lupain cerita tentang 7 orang yang pernah saling punya satu sama lain di masa paling indah.
 
-I don’t say much about how I feel,
-But loving you just feels so real.
-In quiet moments, day or night,
-You’re the reason everything feels right.
+Terima kasih buat semuanya.
+Buat tawa yang ga ada habisnya.
+Buat pelukan waktu lagi hancur.
+Buat semua foto random, video jelek, suara berisik di kelas, dan kenangan kecil yang ternyata jadi sesuatu yang paling berharga sekarang.
 
-If you could see my heart so clear,
-You’d know you’re what I hold most dear.
-No doubt, no fear, no trace of strife,
-You’re my favorite part of life.
+Mungkin nanti kita ga akan bisa kumpul selengkap ini lagi. Mungkin setelah ini semuanya cuma tinggal cerita. Tapi percayalah, seberapa jauhnya kita nanti, kalian tetap jadi bagian terbaik yang pernah hadir di hidupku.
 
-With all my heart, 
-Your Girlfriend.`;
+7 orang,
+1 cerita,
+dan kenangan yang ga akan pernah benar-benar selesai.`;
 
   useEffect(() => {
     let currentIndex = 0;
